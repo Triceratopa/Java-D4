@@ -3,7 +3,7 @@ package PlayMultimediale;
 public class Video extends ElementoMultimediale {
     private  int bright;
 
-
+/*Se non avessi dato volume e durata come attributi alla classe base li avrei dovuti dare qui*/
 
     public Video(String title, int volume, int duration) {
         super(title,volume,duration);
@@ -47,6 +47,15 @@ public class Video extends ElementoMultimediale {
             System.out.println("Volume alzato: " + getVolume());
         }
     }
+    //@Override
+    public void play() {
+        System.out.println("Riproduzione video: " + getTitle() + "!".repeat(getTitle()) + " con durata di " + getDuration() + " secondi.");
+    }
+    /*@Override
+     * public void show(){
+     *  System.out.println("Immagine non riproducibile.");
+     * oppure
+     * throw new  UnsupportedOperationException()}*/
 }
 
 

@@ -9,6 +9,7 @@ public class Main {
         System.out.println("Welcome to PlayMultimediale");
 
         ElementoMultimediale[] elementi = new ElementoMultimediale[5];
+        /*Bisognava popolare l'array  con oggetti*/
         for (int i = 0; i < elementi.length; i++) {
             System.out.println("Inserisci un elemento multimediale");
             int elemento = in.nextInt();

@@ -15,8 +15,14 @@ public class Immagine extends ElementoMultimediale {
             this.bright = bright;
         }
     }
+    //@Override public show()
     public void show(){
        String asterisks = "*".repeat( bright);
        System.out.println( getTitle()+ asterisks );
     }
+    /*@Override
+    * public void play(){
+    *  System.out.println("Immagine non riproducibile.");
+    * oppure
+    * throw new  UnsupportedOperationException()}*/
 }
