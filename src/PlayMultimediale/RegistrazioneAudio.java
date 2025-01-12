@@ -8,9 +8,12 @@ public class RegistrazioneAudio extends ElementoMultimediale {
 
     }
   public void play() {
-        for(int i=0;getDuration()>i;i++)
-        if (){
-            System.out.println("Riproduzione in corso " + getTitle() + ": " + getDuration());
+        for(int i=1;i<=getDuration();i++)
+            System.out.println("Riproduzione in corso " + getTitle() + "! ".repeat(getVolume()) + i);
+        try {
+            Thread.sleep(1000); //ChatGpt mi ha fatto conoscere questo metodo per rendere una riproduzione più fluida
+        } catch (InterruptedException e){ //La sintassi usa InterruptedException che genera un'eccezione al thread
+            System.out.println("Errore durante la riproduzione");
         }
 
   }
